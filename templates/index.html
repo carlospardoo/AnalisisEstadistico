@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resultado Análisis</title>
+        <link rel="stylesheet" href="../static/css/Estilos.css">
+    </head>
+    <body>
+        <h1>Análisis Estadístico referente a Tweets sobre McDonalds</h1>
+        <p>En el siguiente artículo se analizarán datos estadísticos tomados de la red social Twitter, referentes a la cadena de comida rápida McDonalds.
+            Los datos analizados son Tweets de diferentes personas en el lenguaje español donde se menciona la palabra McDonalds.
+            Para el análisis se decidió tomar una muestra de 100 Tweets.
+        </p>
+        <h2>Análisis inicial de la muestra</h2>
+        <p>Se inició el análisis de toda la muestra, obteniendo lo siguiente:</p>
+        <ul>
+            <li>Media: <div class="dato">{{gener[0]}}</div class="dato"></li>
+            <li>Mediana: <div class="dato">{{gener[1]}}</div class="dato"></li>
+            <li>Moda: <div class="dato">{{gener[2]}}</div class="dato"></li>
+            <li>Desviación estándar: <div class="dato">{{gener[3]}}</div class="dato"></li>
+        </ul>
+        <p>Se puede evidenciar que los datos se encuentran muy dispersos con respecto a la media. Además la moda por lo general es cero o un número muy grande, 
+            lo que evidencia que la mayoría de los datos poseen muy pocos retweets o tienen demasiados.
+        Por ello se analizará el rango para comprobar que gran parte del valor de la media proviene de un grupo de la muestra con 
+        una gran cantidad de retweets.</p>
+        <div class="datos">Rango de la muestra: {{gener[4]}}</div>
+        <p>Al comprobarse el gran rango existente, se decide dividir la muestra en dos grupos: El primero contiene las publicaciones con menos 
+            de 1000 retweets, mientras que el segundo contiene las publicaciones con 1000 o más retweets.</p>
+        <p>En el siguiente gráfico se muestra el porcentaje de la muestra que pertenece a cada grupo que se creará</p>
+        <img src="../static/imagen/Pie.png" alt="Porcentaje de retweets">
+        </body>
+        <h2>Análisis de la muestra de datos con muchos retweets</h2>
+        <p>Al analizar la muestra del grupo de datos con muchos retweets se obtuvo lo siguiente:</p>
+        <ul>
+            <li>Media: <div class="dato">{{grande[0]}}</div></li>
+            <li>Mediana: <div class="dato">{{grande[1]}}</div class="dato"></li>
+            <li>Moda: <div class="dato">{{grande[2]}}</div class="dato"></li>
+            <li>Desviación estándar: <div class="dato">{{grande[3]}}</div class="dato"></li>
+        </ul>
+        <p>Con base en esta información se puede deducir que la gran mayoría de éste tipo de Tweets provienen de una o pocas publicaciones que han 
+            sido muy retwitteadas.
+        </p>
+        <p>Cuando se analiza el contenido de los tweets se descubre que los tweets muy retwitteados se puede evidenciar que éstos son mayormente de 
+            carácter político o referentes a un suceso particular ocurrido en McDonalds.</p>
+        <h2>Análisis de la muestra de datos con pocos retweets</h2>
+        <p>Al analizar la muestra del grupo de datos con pocos retweets se obtuvo lo siguiente:</p>
+        <ul>
+            <li>Media: <div class="dato">{{pequeno[0]}}</div class="dato"></li>
+            <li>Mediana: <div class="dato">{{pequeno[1]}}</div class="dato"></li>
+            <li>Moda: <div class="dato">{{pequeno[2]}}</div class="dato"></li>
+            <li>Desviación estándar: <div class="dato">{{pequeno[3]}}</div class="dato"></li>
+        </ul>
+        <p>Con base en esta información se puede deducir que la gran mayoría de los Tweets en ésta muestra no son retwitteados, o son retwitteados poco.
+        </p>
+        <p>Sin embargo, al leer los comentarios de los tweets con pocos retweets, se descubre que éstos poseen una mayor diversidad referente a la temática que tratan.</p>
+        <h2>Propuesta de solución</h2>
+        <p>La propuesta de solución consiste en hacer mayor énfasis sobre los Tweets que reciben pocos retwetts, debido a que éstos muestran de mejor manera intereses
+            de las personas hacia McDonalds.
+        </p>
+</html>

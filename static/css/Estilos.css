@@ -1,0 +1,41 @@
+body{
+    margin: 10%;
+    background-color: #F7F5F3;
+}
+h1{
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #2B2A29;
+}
+h2{
+    padding-top: 20px;
+    font-size: 22px ;
+    font-family: 'Times New Roman', Times, serif;
+    color: #2B2A29;
+}
+p{
+    
+    font-size: 17px ;
+    font-family: 'Times New Roman', Times, serif;
+}
+img{
+    padding-left: 20%;
+}
+li{
+    display: block;
+    padding-bottom: 10px;
+    font-size: 17px ;
+    font-family: 'Times New Roman', Times, serif;
+}
+.dato{
+    display: inline;
+    padding: 20px;
+}
+.datos{
+    display: inline;
+    padding: 20px;
+    font-size: 17px ;
+    font-family: 'Times New Roman', Times, serif;
+}
